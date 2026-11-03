@@ -8,6 +8,8 @@ Requires Python 3.10 or newer. Uses `markdown-it-py` for Markdown parsing,
 `mdit-py-plugins` for maths and footnotes, and PyYAML's safe loader for metadata.
 No external XML parser or network service is involved in conversion.
 
+**THIS SHIT IS COMPLETELY VIBE-CODED AND SHOULD BE TREATED AS SUCH.**
+
 ## Install
 
 ```sh
