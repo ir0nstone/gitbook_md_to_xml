@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<document schema-version="1" source="example.md">
+  <metadata>
+    <mapping>
+      <entry key="title">
+        <value type="string">ret2win</value>
+      </entry>
+      <entry key="description">
+        <value type="string">A small GitBook conversion example</value>
+      </entry>
+      <entry key="tags">
+        <sequence>
+          <item>
+            <value type="string">pwn</value>
+          </item>
+          <item>
+            <value type="string">stack</value>
+          </item>
+        </sequence>
+      </entry>
+    </mapping>
+  </metadata>
+  <content>
+    <heading level="1" source-line="7" id="ret2win">
+      <text>ret2win</text>
+    </heading>
+    <paragraph source-line="9">
+      <text>Redirect execution to </text>
+      <strong>
+        <text>win</text>
+      </strong>
+      <text>, using the </text>
+      <code>win()</code>
+      <text> function.</text>
+    </paragraph>
+    <callout source-line="11" kind="warning">
+      <paragraph source-line="12">
+        <text>This overwrites the saved return pointer.</text>
+      </paragraph>
+    </callout>
+    <tabs source-line="15">
+      <tab title="Python" source-line="16">
+        <code-group title="exploit.py" lineNumbers="true" source-line="17">
+          <code-block language="python" info="python" source-line="18">payload = b"A" * 52
+</code-block>
+        </code-group>
+      </tab>
+      <tab title="Explanation" source-line="23">
+        <paragraph source-line="24">
+          <text>The padding length is </text>
+          <math display="inline">4 \times 13</math>
+          <text> bytes.</text>
+        </paragraph>
+      </tab>
+    </tabs>
+    <download src="assets/ret2win.zip" caption="Download the challenge" source-line="28" />
+    <paragraph source-line="30">
+      <text>See </text>
+      <link href="stack-alignment.md">
+        <text>stack alignment</text>
+      </link>
+      <text> next.</text>
+    </paragraph>
+  </content>
+</document>
